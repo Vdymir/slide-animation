@@ -1,6 +1,5 @@
 import CardMovie from "@/components/CardMovie";
 import useFetchMovies from "@/hooks/useFetchMovies";
-
 import { ActivityIndicator, View } from "react-native";
 import Animated, {
   useAnimatedScrollHandler,

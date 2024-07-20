@@ -1,6 +1,5 @@
-import { View, Text } from "react-native";
-import React, { useEffect, useState } from "react";
-import { Character, Characters } from "@/interface/Characters.interface";
+import { useEffect, useState } from "react";
+import { Character } from "@/interface/Characters.interface";
 
 export default function useFetchMovies() {
   const [data, setData] = useState<Character[] | null>(null);

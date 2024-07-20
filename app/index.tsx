@@ -1,6 +1,6 @@
 import CardMovie from "@/components/CardMovie";
 import useFetchMovies from "@/hooks/useFetchMovies";
-import { ActivityIndicator, View } from "react-native";
+import { ActivityIndicator, StatusBar, View } from "react-native";
 import Animated, {
   useAnimatedScrollHandler,
   useSharedValue,
@@ -16,6 +16,7 @@ export default function Index() {
 
   return (
     <View>
+      <StatusBar hidden />
       {!data ? (
         <ActivityIndicator />
       ) : (
